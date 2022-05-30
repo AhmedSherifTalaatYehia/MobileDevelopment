@@ -13,7 +13,7 @@ export default function App() {
     console.log("clicked")
     try {
       
-      await Facebook.initializeAsync({appId: '335199148564242'});
+      await Facebook.initializeAsync({appId: '#Enter your App Id'});
       console.log("waiting")
       const {type,token} = await Facebook.logInWithReadPermissionsAsync({
         permissions: ['public_profile'],
